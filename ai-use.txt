@@ -1,0 +1,32 @@
+AI USE - HW2 (Air Asia Rewards Redemption, static HTML/CSS pages)
+
+AI TOOL USED
+Claude (Claude Sonnet 5.5, by Anthropic).
+
+PROMPTS USED
+Prompt 1: I attached my HW1 wireframes PDF (Login, Gift Card List, Gift Card
+Details, Add Gift Card, Update Gift Card) together with the HW2 assignment
+instructions, and asked Claude to build the five required pages using the exact
+filenames (login.php, card-list.php, card-details.php, card-add.php,
+card-update.php) with one external CSS file in css/ and the gift-card image in
+images/, using only HTML and CSS (no PHP logic, database or JavaScript).
+Prompt 2: Create an ai-use.txt file covering the tool used, the prompts, how AI
+helped, and one suggestion that was tested, changed or rejected.
+
+HOW AI SUPPORTED MY WORK
+Claude translated each HW1 wireframe into a page structure and suggested
+semantic elements (header, main, nav, section, article, dl for the details
+page) and accessible form labels (every input and select has a label linked
+with for/id). It wrote the shared stylesheet, generated a placeholder
+gift-card image, and wired up the workflow with links and form actions:
+login -> card-list -> card-details -> card-update -> card-list, and
+card-list -> card-add -> card-list. It also helped check every link, form
+action and file path against the assignment requirements.
+
+ONE AI SUGGESTION I TESTED, CHANGED OR REJECTED
+The HW1 wireframes include an "Add Customer" link on the list page and a
+"Delete Gift Card" link on the details page. Carrying them over would have
+created links to pages that do not exist in HW2 (the assignment says a Delete
+page is not required and no customer page is listed). I left both links out so
+that no link is broken, and I added a Cancel link to the Add and Update forms
+and a Back link on the details page instead.

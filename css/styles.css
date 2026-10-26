@@ -1,0 +1,228 @@
+/* Air Asia Rewards Redemption - shared styles for all pages */
+
+:root {
+  --red: #c8102e;
+  --red-dark: #9e0c24;
+  --ink: #222;
+  --muted: #666;
+  --line: #ddd;
+  --bg: #f5f5f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+/* ---------- Header and layout ---------- */
+.site-header {
+  background: var(--red);
+  color: #fff;
+  padding: 14px 24px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+main {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+a {
+  color: var(--red);
+}
+
+a:hover {
+  color: var(--red-dark);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+/* ---------- Buttons and button-style links ---------- */
+.btn,
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: var(--red);
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+button:hover {
+  background: var(--red-dark);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.btn-secondary:hover {
+  background: #fdeef0;
+  color: var(--red-dark);
+}
+
+.action-bar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* ---------- Login page ---------- */
+.login-panel {
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+.login-panel .subtitle {
+  color: var(--muted);
+  margin-top: -8px;
+}
+
+/* ---------- Forms ---------- */
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid var(--red);
+  outline-offset: 1px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.form-panel {
+  max-width: 520px;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+/* ---------- Gift card list ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card-item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.card-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+.card-item h3 {
+  margin: 12px 0 4px;
+  font-size: 1.05rem;
+}
+
+.card-item .points {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* ---------- Gift card details ---------- */
+.details-layout {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.details-layout img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+.details-list {
+  flex: 1;
+  min-width: 240px;
+  margin: 0;
+}
+
+.details-list dt {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 14px;
+}
+
+.details-list dt:first-child {
+  margin-top: 0;
+}
+
+.details-list dd {
+  margin: 2px 0 0;
+  font-size: 1.1rem;
+}
